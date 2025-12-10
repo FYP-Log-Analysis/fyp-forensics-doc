@@ -1,0 +1,1 @@
+Run python3 -m normalizer.src.normalize from the project root directory as it will be used later in the pipeline
