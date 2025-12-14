@@ -1,56 +1,55 @@
 import re
 import json
 
-# Pattern to match XML namespaces like {http://...}
+# Regex to strip out those annoying XML namespace prefixes
 NAMESPACE_REGEX = r"\{.*?\}"
 
 def remove_xml_namespace(key: str) -> str:
-    """Remove the XML namespace from keys."""
-    # Strip XML namespace prefix from the key
+    """Strip out XML namespace junk from keys so they're actually readable."""
+    # Get rid of the {http://whatever} prefix
     return re.sub(NAMESPACE_REGEX, "", key)
 
 def extract_strings(raw_str: str):
-    """Extract <string>...</string> values from XML-like data."""
-    # If not a string, return the value unchanged
+    """Pull out the actual values from <string> tags in XML data."""
+    # If it's not a string, just leave it alone
     if not isinstance(raw_str, str):
         return raw_str
 
-    # Find all <string>...</string> occurrences
+    # Look for anything wrapped in <string> tags
     matches = re.findall(r"<string>(.*?)</string>", raw_str, re.DOTALL)
 
-    # If only one string value found, return it directly
+    # If we found exactly one, return it as a plain string
     if len(matches) == 1:
         return matches[0]
 
-    # If multiple strings found, return as a list
+    # If there are multiple, give back a list
     return matches
 
 def convert_hex(value: str):
-    """Convert hex strings like '0x00000012' to integers."""
-    # Check if the value is hex-format
+    """Turn hex strings like '0x00000012' into actual numbers."""
+    # See if this looks like a hex value
     if isinstance(value, str) and value.startswith("0x"):
         try:
-            # Convert hex string to integer
+            # Try to parse it as hex
             return int(value, 16)
         except ValueError:
-            # If conversion fails, return original value
+            # If that fails, just leave it as-is
             return value
 
-    # Return unchanged if not hex
+    # Not hex, so don't touch it
     return value
 
 def clean_event_data(event_data: dict):
-    """Clean all keys and extract string values for Application/System logs."""
+    """Clean up the messy XML event data so it's actually usable."""
     new_data = {}
 
-    # Process each key-value pair in event_data
+    # Go through each field and fix it up
     for key, value in event_data.items():
 
-        # Remove XML namespace from the key
+        # Strip the XML namespace cruft from the key name
         clean_key = remove_xml_namespace(key)
 
-        # Extract <string> content or return original value
+        # Pull out the actual content from <string> tags
         new_data[clean_key] = extract_strings(value)
 
-    # Return cleaned dictionary
     return new_data

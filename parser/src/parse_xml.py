@@ -7,12 +7,12 @@ OUTPUT_DIRECTORY = "../../data/processed/json/"
 
 os.makedirs(OUTPUT_DIRECTORY, exist_ok=True)
 
-# Windows Event Log XML namespace
+# Microsoft's XML namespace for event logs - we need this to find anything
 NS = {"e": "http://schemas.microsoft.com/win/2004/08/events/event"}
 
 
 def parse_event(xml_string):
-    """Parse a full XML <Event> block (multi-line)."""
+    """Take a chunk of XML and extract all the useful event data from it."""
 
     try:
         root = ET.fromstring(xml_string)
@@ -44,7 +44,7 @@ def parse_event(xml_string):
             "event_data": {}
         }
 
-        # Extract EventData fields
+        # Pull out the actual event details if they exist
         if event_data is not None:
             for child in event_data:
                 name = child.attrib.get("Name", child.tag)
@@ -57,7 +57,7 @@ def parse_event(xml_string):
 
 
 def convert_file(filename):
-    """Convert multi-line XML event logs into a JSON array."""
+    """Read an XML log file and turn it into a nice JSON array of events."""
 
     input_path = os.path.join(INPUT_DIRECTORY, filename)
     output_path = os.path.join(OUTPUT_DIRECTORY, filename.replace(".xml", ".json"))
@@ -75,17 +75,17 @@ def convert_file(filename):
         for line in infile:
             stripped = line.strip()
 
-            # Start <Event> block
+            # Found the start of a new event - start collecting lines
             if stripped.startswith("<Event "):
                 inside_event = True
                 buffer = [line]
                 continue
 
-            # Collect lines inside event
+            # Keep adding lines while we're inside an event
             if inside_event:
                 buffer.append(line)
 
-            # End of event block
+            # Hit the end - time to process this event
             if stripped == "</Event>":
                 inside_event = False
 

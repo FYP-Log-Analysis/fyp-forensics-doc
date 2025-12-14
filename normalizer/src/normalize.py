@@ -8,70 +8,67 @@ from .system_norm import normalize_system_event
 from .security_norm import normalize_security_event
 from .powershell_norm import normalize_powershell_event
 
-# Base project directory (3 levels up from this file)
+# Figure out where we are in the project structure
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-# Input folder: raw JSON from the parser
+# Where the parser dumped the raw JSON files
 INPUT_DIR = BASE_DIR / "data" / "processed" / "json"
 
-# Output folder: cleaned / normalized JSON files
+# Where we'll save the cleaned up versions
 OUTPUT_DIR = BASE_DIR / "data" / "processed" / "normalized"
 
 # Create output directory if it doesn't exist
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 def load_json(path):
-    # Read JSON file and return Python object
+    # Just a simple wrapper to read JSON files
     with open(path, "r") as f:
         return json.load(f)
 
 def save_json(path, data):
-    # Write Python object to JSON file with indentation
+    # Write JSON with nice formatting so it's readable
     with open(path, "w") as f:
         json.dump(data, f, indent=4)
 
 def normalize_file(input_path, output_path, normalizer):
-    # Load events from input JSON file
+    # Load up all the events from the file
     events = load_json(input_path)
 
-    # Apply the specific normalizer function to each event
+    # Run each event through the normalizer to clean it up
     normalized = [normalizer(event) for event in events]
 
-    # Save the normalized events to output JSON file
+    # Write out the cleaned events
     save_json(output_path, normalized)
 
 def main():
-    # Normalize Application logs
+    # Process each log type with its specific normalizer
     normalize_file(
         INPUT_DIR / "Application.json",
         OUTPUT_DIR / "Application_normalized.json",
         normalize_application_event,
     )
 
-    # Normalize System logs
     normalize_file(
         INPUT_DIR / "System.json",
         OUTPUT_DIR / "System_normalized.json",
         normalize_system_event,
     )
 
-    # Normalize Security logs
     normalize_file(
         INPUT_DIR / "Security.json",
         OUTPUT_DIR / "Security_normalized.json",
         normalize_security_event,
     )
 
-    # Normalize PowerShell Operational logs
     normalize_file(
         INPUT_DIR / "PowerShell_Operational.json",
         OUTPUT_DIR / "PowerShell_Operational_normalized.json",
         normalize_powershell_event,
     )
 
-    # Notify user when processing is done
+    # Let them know we're done
     print("Normalization complete. Files saved to /data/processed/normalized/")
 
 if __name__ == "__main__":
-    # Run the main normalization routine
+    # Fire up the normalization process
     main()

@@ -1,10 +1,9 @@
 def normalize_powershell_event(event):
-    # Convert event_id from string to integer
+    # Fix the event ID format
     event["event_id"] = int(event["event_id"])
 
-    # Ensure event_data exists, since PowerShell logs may have empty fields
+    # PowerShell events can be weird - make sure event_data exists
     if "event_data" not in event:
         event["event_data"] = {}
 
-    # Return the normalized PowerShell event
     return event
