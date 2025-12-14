@@ -1,0 +1,702 @@
+[
+  {
+    "timestamp": "2025-11-23 09:25:03.894035+00:00",
+    "computer": "WIN-E0UGH20N01E",
+    "user_sid": "S-1-5-18",
+    "process": "Registry",
+    "parent_process": null
+  },
+  {
+    "timestamp": "2025-11-23 09:25:03.898222+00:00",
+    "computer": "WIN-E0UGH20N01E",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": null
+  },
+  {
+    "timestamp": "2025-11-23 09:25:04.912069+00:00",
+    "computer": "WIN-E0UGH20N01E",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\autochk.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:25:05.085251+00:00",
+    "computer": "WIN-E0UGH20N01E",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\setupcl.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:25:21.627918+00:00",
+    "computer": "WIN-E0UGH20N01E",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:25:22.090328+00:00",
+    "computer": "WIN-E0UGH20N01E",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\csrss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:25:22.201073+00:00",
+    "computer": "WIN-E0UGH20N01E",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:25:22.204744+00:00",
+    "computer": "WIN-E0UGH20N01E",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\wininit.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:25:22.210583+00:00",
+    "computer": "WIN-E0UGH20N01E",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\csrss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:25:22.256285+00:00",
+    "computer": "WIN-E0UGH20N01E",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\winlogon.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:25:22.411884+00:00",
+    "computer": "WIN-E0UGH20N01E",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\services.exe",
+    "parent_process": "C:\\Windows\\System32\\wininit.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:25:22.488255+00:00",
+    "computer": "WIN-E0UGH20N01E",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\lsass.exe",
+    "parent_process": "C:\\Windows\\System32\\wininit.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:27:22.013018+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "Registry",
+    "parent_process": null
+  },
+  {
+    "timestamp": "2025-11-23 09:27:22.015631+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": null
+  },
+  {
+    "timestamp": "2025-11-23 09:27:22.387867+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\autochk.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:27:22.537462+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:27:23.393013+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\csrss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:27:23.491915+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:27:23.493889+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\wininit.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:27:23.497200+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\csrss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:27:23.515995+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\winlogon.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:27:23.616770+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\services.exe",
+    "parent_process": "C:\\Windows\\System32\\wininit.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:27:23.650475+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\lsass.exe",
+    "parent_process": "C:\\Windows\\System32\\wininit.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:32:07.424700+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "Registry",
+    "parent_process": null
+  },
+  {
+    "timestamp": "2025-11-23 09:32:07.428579+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": null
+  },
+  {
+    "timestamp": "2025-11-23 09:32:08.040419+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\autochk.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:32:08.217705+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:32:08.890657+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\csrss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:32:08.980009+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:32:08.981432+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\wininit.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:32:08.984539+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\csrss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:32:09.001841+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\winlogon.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:32:09.108114+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\services.exe",
+    "parent_process": "C:\\Windows\\System32\\wininit.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:32:09.140863+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\lsass.exe",
+    "parent_process": "C:\\Windows\\System32\\wininit.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:46:53.124939+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "Registry",
+    "parent_process": null
+  },
+  {
+    "timestamp": "2025-11-23 09:46:53.130156+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": null
+  },
+  {
+    "timestamp": "2025-11-23 09:46:53.972557+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\autochk.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:46:54.136612+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:46:54.471647+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\csrss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:46:54.529325+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:46:54.531301+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\wininit.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:46:54.533472+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\csrss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:46:54.550432+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\winlogon.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:46:54.630222+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\services.exe",
+    "parent_process": "C:\\Windows\\System32\\wininit.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:46:54.662449+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\lsass.exe",
+    "parent_process": "C:\\Windows\\System32\\wininit.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:48:30.979677+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "Registry",
+    "parent_process": null
+  },
+  {
+    "timestamp": "2025-11-23 09:48:30.982027+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": null
+  },
+  {
+    "timestamp": "2025-11-23 09:48:31.385052+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\autochk.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:48:31.524635+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:48:32.372692+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\csrss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:48:32.459122+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:48:32.461096+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\wininit.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:48:32.464361+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\csrss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:48:32.480869+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\winlogon.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:48:32.583942+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\services.exe",
+    "parent_process": "C:\\Windows\\System32\\wininit.exe"
+  },
+  {
+    "timestamp": "2025-11-23 09:48:32.615824+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\lsass.exe",
+    "parent_process": "C:\\Windows\\System32\\wininit.exe"
+  },
+  {
+    "timestamp": "2025-11-23 17:59:24.084389+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "Registry",
+    "parent_process": null
+  },
+  {
+    "timestamp": "2025-11-23 17:59:24.087927+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": null
+  },
+  {
+    "timestamp": "2025-11-23 17:59:24.577946+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\autochk.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 17:59:24.752613+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 17:59:25.483866+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\csrss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 17:59:25.597891+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 17:59:25.600273+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\wininit.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 17:59:25.603254+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\csrss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 17:59:25.628057+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\winlogon.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 17:59:25.759501+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\services.exe",
+    "parent_process": "C:\\Windows\\System32\\wininit.exe"
+  },
+  {
+    "timestamp": "2025-11-23 17:59:25.803946+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\lsass.exe",
+    "parent_process": "C:\\Windows\\System32\\wininit.exe"
+  },
+  {
+    "timestamp": "2025-11-23 20:14:50.439552+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "Registry",
+    "parent_process": null
+  },
+  {
+    "timestamp": "2025-11-23 20:14:50.445156+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": null
+  },
+  {
+    "timestamp": "2025-11-23 20:14:51.204121+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\autochk.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 20:14:51.387278+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 20:14:52.051458+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\csrss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 20:14:52.148525+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 20:14:52.150269+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\wininit.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 20:14:52.153606+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\csrss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 20:14:52.175592+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\winlogon.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-23 20:14:52.292761+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\services.exe",
+    "parent_process": "C:\\Windows\\System32\\wininit.exe"
+  },
+  {
+    "timestamp": "2025-11-23 20:14:52.336519+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\lsass.exe",
+    "parent_process": "C:\\Windows\\System32\\wininit.exe"
+  },
+  {
+    "timestamp": "2025-11-25 14:19:49.124937+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "Registry",
+    "parent_process": null
+  },
+  {
+    "timestamp": "2025-11-25 14:19:49.132156+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": null
+  },
+  {
+    "timestamp": "2025-11-25 14:19:49.900789+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\autochk.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-25 14:19:50.045492+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-25 14:19:50.806189+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\csrss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-25 14:19:50.902761+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-25 14:19:50.905018+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\wininit.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-25 14:19:50.907597+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\csrss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-25 14:19:50.928576+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\winlogon.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-11-25 14:19:51.054960+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\services.exe",
+    "parent_process": "C:\\Windows\\System32\\wininit.exe"
+  },
+  {
+    "timestamp": "2025-11-25 14:19:51.098036+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\lsass.exe",
+    "parent_process": "C:\\Windows\\System32\\wininit.exe"
+  },
+  {
+    "timestamp": "2025-12-04 22:29:13.143164+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "Registry",
+    "parent_process": null
+  },
+  {
+    "timestamp": "2025-12-04 22:29:13.148392+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": null
+  },
+  {
+    "timestamp": "2025-12-04 22:29:13.794249+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\autochk.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-12-04 22:29:14.762602+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-12-04 22:29:15.007566+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\csrss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-12-04 22:29:15.111067+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\smss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-12-04 22:29:15.113592+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\wininit.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-12-04 22:29:15.116211+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\csrss.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-12-04 22:29:15.142487+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\winlogon.exe",
+    "parent_process": "C:\\Windows\\System32\\smss.exe"
+  },
+  {
+    "timestamp": "2025-12-04 22:29:15.268787+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\services.exe",
+    "parent_process": "C:\\Windows\\System32\\wininit.exe"
+  },
+  {
+    "timestamp": "2025-12-04 22:29:15.311529+00:00",
+    "computer": "WIN-QCM4OJM0UCK",
+    "user_sid": "S-1-5-18",
+    "process": "C:\\Windows\\System32\\lsass.exe",
+    "parent_process": "C:\\Windows\\System32\\wininit.exe"
+  }
+]
