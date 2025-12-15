@@ -1,19 +1,19 @@
 import json
 from pathlib import Path
 
-# Paths and settings for filtering process creation events
+# Paths
 INPUT_FILE = Path("../../data/processed/normalized/security_normalized.json")
 OUTPUT_FILE = Path("process_execution_events.json")
 
 PROCESS_EVENT_ID = 4688
 
-# Pull in all the security events we've already normalized
+# Pull all the normalized security events
 with open(INPUT_FILE, "r") as f:
     events = json.load(f)
 
 print(f"Loaded {len(events)} total events")
 
-# Now we'll pick out just the process creation events (ID 4688) that have all the data we need
+# pick out process creation events (ID 4688)
 filtered_events = []
 
 for event in events:
@@ -21,11 +21,11 @@ for event in events:
     if event.get("event_id") != PROCESS_EVENT_ID:
         continue
 
-    # Only want Security channel events
+    # Only Security channel events
     if event.get("channel") != "Security":
         continue
 
-    # Make sure we have the key fields we need for analysis
+    # key fields for analysis
     event_data = event.get("event_data", {})
     process_name = event_data.get("NewProcessName")
     timestamp = event.get("timestamp")
@@ -33,7 +33,7 @@ for event in events:
     if not process_name or not timestamp:
         continue
 
-    # Build a clean record with just the fields we want
+    # Build a clean record with the required fields
     filtered_events.append({
         "timestamp": timestamp,
         "computer": event.get("computer"),
