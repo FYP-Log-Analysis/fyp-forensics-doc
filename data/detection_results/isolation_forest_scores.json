@@ -1,0 +1,44 @@
+[
+  {
+    "window_start": "2025-11-23T09:25:03.894035+00:00",
+    "window_end": "2025-11-23T09:30:03.894035+00:00",
+    "anomaly_score": -0.05295230960979036,
+    "is_anomalous": true
+  },
+  {
+    "window_start": "2025-11-23T09:32:07.424700+00:00",
+    "window_end": "2025-11-23T09:37:07.424700+00:00",
+    "anomaly_score": 0.2582645390889032,
+    "is_anomalous": false
+  },
+  {
+    "window_start": "2025-11-23T09:46:53.124939+00:00",
+    "window_end": "2025-11-23T09:51:53.124939+00:00",
+    "anomaly_score": 0.03530153973986028,
+    "is_anomalous": false
+  },
+  {
+    "window_start": "2025-11-23T17:59:24.084389+00:00",
+    "window_end": "2025-11-23T18:04:24.084389+00:00",
+    "anomaly_score": 0.2582645390889032,
+    "is_anomalous": false
+  },
+  {
+    "window_start": "2025-11-23T20:14:50.439552+00:00",
+    "window_end": "2025-11-23T20:19:50.439552+00:00",
+    "anomaly_score": 0.2582645390889032,
+    "is_anomalous": false
+  },
+  {
+    "window_start": "2025-11-25T14:19:49.124937+00:00",
+    "window_end": "2025-11-25T14:24:49.124937+00:00",
+    "anomaly_score": 0.2582645390889032,
+    "is_anomalous": false
+  },
+  {
+    "window_start": "2025-12-04T22:29:13.143164+00:00",
+    "window_end": "2025-12-04T22:34:13.143164+00:00",
+    "anomaly_score": 0.2582645390889032,
+    "is_anomalous": false
+  }
+]
