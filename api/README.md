@@ -1,14 +1,14 @@
-# Forensics API
+# API
 
-A FastAPI-based REST API service for accessing and querying normalized Windows Event Log data for forensic analysis.
+**What's in this folder:**
+- `main.py` - Main web server (FastAPI)
+- `models/` - Database table definitions
+- `routes/` - Web API endpoints
+- `scripts/` - Helper scripts
+- `services/` - Business logic
+- `data/` - Uploaded and processed files
 
-## Overview
-
-This API serves as the backend service for the forensics log analysis system, providing RESTful endpoints to access processed and normalized Windows Event Logs. The API is containerized with Docker and uses PostgreSQL for data persistence.
-
-## Project Structure
-
-```
+**Purpose:** This folder contains the web server that receives log files and provides API endpoints for the frontend to use.
 api/
 ├── main.py                     # Main FastAPI application entry point
 ├── requirements.txt            # Python dependencies
