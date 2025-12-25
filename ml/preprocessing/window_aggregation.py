@@ -66,7 +66,7 @@ for event in events:
         current_window_end = current_window_start + timedelta(minutes=WINDOW_SIZE_MINUTES)
         current_window_events = [event]
 
-# Don't forget to save the last window too
+# save last window too
 clean_events = []
 for e in current_window_events:
     e_copy = e.copy()
@@ -80,7 +80,7 @@ windows.append({
     "events": clean_events
 })
 
-# Write out all our time windows for the next analysis step
+# Write out all our time windows
 with open(OUTPUT_FILE, "w") as f:
     json.dump(windows, f, indent=2)
 

@@ -1,7 +1,7 @@
 import os
 import yaml
 
-# Loads all Sigma rules from a folder (YAML files)
+# Loads all Sigma rules
 def load_sigma_rules(rules_folder):
     rules = []  # List to store rules
     # Go through every file in the folder and subfolders
@@ -17,6 +17,6 @@ def load_sigma_rules(rules_folder):
                         rule['source_file'] = file_path  # Save file path
                         rules.append(rule)
                 except Exception as e:
-                    # Print error but keep going
+                    
                     print('Could not load rule:', file_path, e)
     return rules  # Return all loaded rules
