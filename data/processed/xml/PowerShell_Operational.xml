@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
 <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event"><System><Provider Name="Microsoft-Windows-PowerShell" Guid="{a0c1853b-5c40-4b15-8766-3cf1c58f985a}"></Provider>
 <EventID Qualifiers="">40961</EventID>
 <Version>1</Version>
@@ -972,3 +974,4 @@ CommandInvocation(Out-Null): "Out-Null"
 <EventData></EventData>
 </Event>
 
+</Events>

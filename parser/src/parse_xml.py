@@ -1,11 +1,18 @@
 import os
 import json
 import xml.etree.ElementTree as ET
+from pathlib import Path
 
-INPUT_DIRECTORY = "../../data/processed/"
-OUTPUT_DIRECTORY = "../../data/processed/json/"
+# Get absolute paths relative to this script's location
+SCRIPT_DIR = Path(__file__).parent
+PROJECT_ROOT = SCRIPT_DIR.parent.parent
 
-os.makedirs(OUTPUT_DIRECTORY, exist_ok=True)
+INPUT_DIRECTORY = PROJECT_ROOT / "data" / "processed" / "xml"
+OUTPUT_DIRECTORY = PROJECT_ROOT / "data" / "processed" / "json"
+
+# Create directories if they don't exist
+INPUT_DIRECTORY.mkdir(parents=True, exist_ok=True)
+OUTPUT_DIRECTORY.mkdir(parents=True, exist_ok=True)
 
 # Microsoft's XML namespace for event logs - we need this to find anything
 NS = {"e": "http://schemas.microsoft.com/win/2004/08/events/event"}
@@ -59,8 +66,8 @@ def parse_event(xml_string):
 def convert_file(filename):
     """Read an XML log file and turn it into a nice JSON array of events."""
 
-    input_path = os.path.join(INPUT_DIRECTORY, filename)
-    output_path = os.path.join(OUTPUT_DIRECTORY, filename.replace(".xml", ".json"))
+    input_path = INPUT_DIRECTORY / filename
+    output_path = OUTPUT_DIRECTORY / filename.replace(".xml", ".json")
 
     print(f"Converting {filename}...")
 
@@ -68,7 +75,7 @@ def convert_file(filename):
     buffer = []
     count = 0
 
-    with open(input_path, "r") as infile, open(output_path, "w") as outfile:
+    with open(input_path, "r", encoding='utf-8') as infile, open(output_path, "w", encoding='utf-8') as outfile:
         outfile.write("[\n")
         first = True
 
@@ -105,10 +112,27 @@ def convert_file(filename):
 
 
 def main():
+    print(f"Looking for XML files in: {INPUT_DIRECTORY}")
+    
+    if not INPUT_DIRECTORY.exists():
+        print(f"Error: Input directory not found: {INPUT_DIRECTORY}")
+        return False
+    
     xml_files = [f for f in os.listdir(INPUT_DIRECTORY) if f.endswith(".xml")]
+    
+    if not xml_files:
+        print(f"No XML files found in {INPUT_DIRECTORY}")
+        return False
+    
+    print(f"Found {len(xml_files)} XML files to process")
+    
     for xml in xml_files:
         convert_file(xml)
+    
+    return True
 
 
 if __name__ == "__main__":
-    main()
+    success = main()
+    if not success:
+        exit(1)

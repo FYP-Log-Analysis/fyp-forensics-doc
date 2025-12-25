@@ -1,12 +1,23 @@
 import json
 import os
+import sys
 from pathlib import Path
 
+# Add the current directory to Python path for imports
+sys.path.append(str(Path(__file__).parent))
+
 # Import event-type-specific normalizers
-from .application_norm import normalize_application_event
-from .system_norm import normalize_system_event
-from .security_norm import normalize_security_event
-from .powershell_norm import normalize_powershell_event
+try:
+    from application_norm import normalize_application_event
+    from system_norm import normalize_system_event
+    from security_norm import normalize_security_event
+    from powershell_norm import normalize_powershell_event
+except ImportError:
+    # Try relative imports if absolute imports fail
+    from .application_norm import normalize_application_event
+    from .system_norm import normalize_system_event
+    from .security_norm import normalize_security_event
+    from .powershell_norm import normalize_powershell_event
 
 # Figure out where we are in the project structure
 BASE_DIR = Path(__file__).resolve().parent.parent.parent

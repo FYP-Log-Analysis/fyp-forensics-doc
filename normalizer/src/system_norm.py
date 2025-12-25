@@ -1,4 +1,13 @@
-from .utils import clean_event_data
+import sys
+from pathlib import Path
+
+# Add current directory to path
+sys.path.append(str(Path(__file__).parent))
+
+try:
+    from utils import clean_event_data
+except ImportError:
+    from .utils import clean_event_data
 
 def normalize_system_event(event):
     # Make the event ID a proper number

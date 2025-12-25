@@ -1,11 +1,30 @@
 import json
 from pathlib import Path
 
+# Get absolute paths relative to this script's location
+SCRIPT_DIR = Path(__file__).parent
+PROJECT_ROOT = SCRIPT_DIR.parent.parent
+
 # Paths
-INPUT_FILE = Path("../../data/processed/normalized/security_normalized.json")
-OUTPUT_FILE = Path("process_execution_events.json")
+INPUT_FILE = PROJECT_ROOT / "data" / "processed" / "normalized" / "Security_normalized.json"
+OUTPUT_FILE = PROJECT_ROOT / "data" / "intermediate" / "process_execution_events.json"
 
 PROCESS_EVENT_ID = 4688
+
+# Create output directory if it doesn't exist
+OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+
+# Check if input file exists
+if not INPUT_FILE.exists():
+    print(f"Error: Input file not found: {INPUT_FILE}")
+    print("Available normalized files:")
+    normalized_dir = PROJECT_ROOT / "data" / "processed" / "normalized"
+    if normalized_dir.exists():
+        for f in normalized_dir.glob("*.json"):
+            print(f"  - {f.name}")
+    else:
+        print("  Normalized directory not found!")
+    exit(1)
 
 # Pull all the normalized security events
 with open(INPUT_FILE, "r") as f:

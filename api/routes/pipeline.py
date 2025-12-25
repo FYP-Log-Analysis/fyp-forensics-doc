@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from api.services.pipeline_service import run_pipeline
+from services.pipeline_service import run_pipeline
 
 router = APIRouter()
 

@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
 <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event"><System><Provider Name="EventLog"></Provider>
 <EventID Qualifiers="32768">6011</EventID>
 <Version>0</Version>
@@ -33318,3 +33320,4 @@ uiomap</Data>
 </EventData>
 </Event>
 
+</Events>

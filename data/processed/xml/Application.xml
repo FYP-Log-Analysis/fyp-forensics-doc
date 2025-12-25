@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
 <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event"><System><Provider Name="Microsoft-Windows-User Profiles Service" Guid="{89b1e9f0-5aff-44a6-9b44-0a07a7ce5845}"></Provider>
 <EventID Qualifiers="">1531</EventID>
 <Version>0</Version>
@@ -15313,3 +15315,4 @@ C:\WINDOWS\system32\sppobjs.dll, msft:spp/volume/services/kms/activationinfo/1.0
 </EventData>
 </Event>
 
+</Events>

@@ -3,9 +3,16 @@ import math
 from pathlib import Path
 from collections import Counter
 
+# Get absolute paths relative to this script's location
+SCRIPT_DIR = Path(__file__).parent
+PROJECT_ROOT = SCRIPT_DIR.parent.parent
+
 # Files and settings for extracting features from our time windows
-INPUT_FILE = "execution_windows.json"
-OUTPUT_FILE = "features.json"
+INPUT_FILE = PROJECT_ROOT / "data" / "intermediate" / "execution_windows.json"
+OUTPUT_FILE = PROJECT_ROOT / "data" / "features" / "baseline_features.json"
+
+# Create output directory if it doesn't exist
+OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
 
 # These are the core Windows processes we expect to see running normally
 CORE_SYSTEM_PROCESSES = {
@@ -138,17 +145,27 @@ def extract_features(window):
     return features
 
 def main():
-    base_path = Path(__file__).parent
+    # Check if input file exists
+    if not INPUT_FILE.exists():
+        print(f"Error: Input file not found: {INPUT_FILE}")
+        exit(1)
+    
+    print(f"Loading execution windows from: {INPUT_FILE}")
 
-    with open(base_path / INPUT_FILE, "r") as file:
+    with open(INPUT_FILE, "r") as file:
         windows = json.load(file)
 
+    print(f"Processing {len(windows)} time windows...")
+    
     all_features = []
     for window in windows:
         feature_row = extract_features(window)
         all_features.append(feature_row)
 
-    with open(base_path / OUTPUT_FILE, "w") as file:
+    print(f"Extracted {len(all_features)} feature vectors")
+    print(f"Saving features to: {OUTPUT_FILE}")
+
+    with open(OUTPUT_FILE, "w") as file:
         json.dump(all_features, file, indent=2)
 
     print("Feature extraction completed.")

@@ -1,11 +1,21 @@
 import json
+from pathlib import Path
 from datetime import datetime, timedelta
 
+# Get absolute paths relative to this script's location
+SCRIPT_DIR = Path(__file__).parent
+PROJECT_ROOT = SCRIPT_DIR.parent.parent
+
 # File paths and settings for our time window analysis
-INPUT_FILE = "process_execution_events.json"
-OUTPUT_FILE = "execution_windows.json"
+INPUT_FILE = PROJECT_ROOT / "data" / "intermediate" / "process_execution_events.json"
+OUTPUT_FILE = PROJECT_ROOT / "data" / "intermediate" / "execution_windows.json"
 
 WINDOW_SIZE_MINUTES = 5
+
+# Check if input file exists
+if not INPUT_FILE.exists():
+    print(f"Error: Input file not found: {INPUT_FILE}")
+    exit(1)
 
 # Load up all the process events we filtered earlier
 with open(INPUT_FILE, "r") as f:

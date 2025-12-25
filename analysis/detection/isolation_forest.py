@@ -1,11 +1,17 @@
 import json
 from pathlib import Path
-
 from sklearn.ensemble import IsolationForest
 
+# Get absolute paths relative to this script's location
+SCRIPT_DIR = Path(__file__).parent
+PROJECT_ROOT = SCRIPT_DIR.parent.parent
+
 # Set up our file paths and detection parameters
-INPUT_FILE = "../../data/features/baseline_features.json"
-OUTPUT_FILE = "../../data/detection_results/isolation_forest_scores.json"
+INPUT_FILE = PROJECT_ROOT / "data" / "features" / "baseline_features.json"
+OUTPUT_FILE = PROJECT_ROOT / "data" / "detection_results" / "isolation_forest_scores.json"
+
+# Create output directory if it doesn't exist
+OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
 
 RANDOM_STATE = 42
 CONTAMINATION = 0.1   # We're assuming about 10% of our data might be anomalous
@@ -99,14 +105,15 @@ def save_results(windows, scores, labels, output_path):
 
 def main():
     """Main function that ties everything together"""
-    # Figure out where our files are relative to this script
-    base_path = Path(__file__).parent
-
-    input_path = base_path / INPUT_FILE
-    output_path = base_path / OUTPUT_FILE
-
-    print("Loading feature data...")
-    feature_rows = load_features(input_path)
+    
+    print(f"Loading feature data from: {INPUT_FILE}")
+    
+    # Check if input file exists
+    if not INPUT_FILE.exists():
+        print(f"Error: Input file not found: {INPUT_FILE}")
+        exit(1)
+    
+    feature_rows = load_features(INPUT_FILE)
 
     print("Preparing feature matrix...")
     feature_matrix = build_feature_matrix(feature_rows)
@@ -114,11 +121,11 @@ def main():
     print("Running Isolation Forest...")
     scores, labels = run_isolation_forest(feature_matrix)
 
-    print("Saving results...")
-    save_results(feature_rows, scores, labels, output_path)
+    print(f"Saving results to: {OUTPUT_FILE}")
+    save_results(feature_rows, scores, labels, OUTPUT_FILE)
 
     print("\nDone! Isolation Forest analysis completed.")
-    print(f"Results saved to: {output_path}")
+    print(f"Results saved to: {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":

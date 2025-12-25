@@ -1,4 +1,13 @@
-from .utils import convert_hex
+import sys
+from pathlib import Path
+
+# Add current directory to path
+sys.path.append(str(Path(__file__).parent))
+
+try:
+    from utils import convert_hex
+except ImportError:
+    from .utils import convert_hex
 
 def normalize_security_event(event):
     # Fix the event ID to be a proper integer
